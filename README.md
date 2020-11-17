@@ -15,7 +15,7 @@
 	--pkg
 	--src
 		---github.com
-				----v_task
+				----activity-tracker
 						-----client
 							------client.go
 						-----db
