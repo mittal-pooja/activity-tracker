@@ -10,6 +10,7 @@
 
 # Directory Structure:
 
+```
 +--go
 |	+--bin
 |	+--pkg
@@ -29,7 +30,7 @@
 						|	+------google
 						|	+------protoc-gen-openapiv2
 
-
+```
 # Commands :
 
 > To generate .go file from .proto:
