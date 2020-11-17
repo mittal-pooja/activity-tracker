@@ -1,0 +1,93 @@
+syntax = "proto3";
+
+package v_task;
+
+option go_package = ".;pb";
+
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/duration.proto";
+//import "google/protobuf/empty.proto";
+
+service ActivityService{
+// Get User Details by userame
+  rpc GetUserByName(Name) returns (User) {}
+
+// Update a user
+  rpc UpdateUserDetails(UpdateUser) returns (Response) {}
+
+// Add a new User
+  rpc RegisterUser(User) returns (Response) {}
+
+//Add User's Activity
+  rpc AddUserActivity(Activity) returns (Response){}  
+
+//Start User's Activity
+//rpc StartUserActivity(Activity)  returns (Response){}
+	
+//Stop User's Activity
+rpc StopUserActivity(Activity)  returns (Response){}
+
+ //Check if an Activity is Done
+  rpc ActivityIsDone(MapUserToActivity) returns (ActivityStatus) {}
+
+  //Check if an Activity is Valid
+  rpc ActivityIsValid(MapUserToActivity) returns (Valid){}
+	
+}
+
+message User{
+	
+	string name = 1;
+	string email = 2;
+	string phone = 3;
+};
+
+message UpdateUser{
+	
+	User user = 1;
+
+};
+
+
+message Name {
+
+	string name = 1;
+}
+
+message Response{
+
+	string response = 1;
+
+}
+
+message Activity{
+	
+	string type = 1;
+	google.protobuf.Timestamp timestamp = 2;
+	google.protobuf.Duration duration = 3;
+	string label =4;
+	string status = 5;
+	string valid = 6;
+	
+}
+
+
+message MapUserToActivity{
+	
+	string Label = 1;
+	string Type = 2;
+}
+
+
+ 
+message ActivityStatus{
+	
+	bool status = 1;
+}
+
+message Valid{
+	
+	string valid = 1;
+	
+}
+
