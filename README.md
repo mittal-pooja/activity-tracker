@@ -8,7 +8,7 @@
 - go get -u -v github.com/jmoiron/sqlx
 
 
-#Directory Structure:
+# Directory Structure:
 
 -go
 	--bin
@@ -30,7 +30,7 @@
 							------protoc-gen-openapiv2
 
 
-#Commands :
+# Commands :
 
 > To generate .go file from .proto:
 
@@ -49,7 +49,7 @@ go run client.go
 
 
 
-#Explanation:
+# Explanation:
 
 > "tracker.proto" contains all the services, rpc methods and messages.
 > "tracker.pb.go" implements all the server and client side stubs in golang.
