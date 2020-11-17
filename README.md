@@ -15,7 +15,7 @@
 |____+--bin
 |____+--pkg
 |____+--src
-	       |______+---github.com
+         |__________+---github.com
 	                      |________+----activity-tracker
 		                                     |_________+-----client
 		                                     |               |____+------client.go
@@ -27,8 +27,8 @@
 		                                     |_________+-----server
 		                                     |               |____+------server.go
 		                                     |_________+-----third_party
-		                                                 |____+------google
-		                                                 |____+------protoc-gen-openapiv2
+		                                                     |____+------google
+		                                                     |____+------protoc-gen-openapiv2
 
 ```
 # Commands :
