@@ -15,21 +15,21 @@
 |	+--bin
 |	+--pkg
 |	+--src
-	|	+---github.com
-		|		+----activity-tracker
-				|		+-----client
-						|	+------client.go
-						+-----db
-						|	+------db.go
-						+-----pb
-						|	+------tracker.proto
-						|	+------tracker.pb.go
-						+-----server
-						|	+------server.go
-						+-----third_party
-						|	+------google
-						|	+------protoc-gen-openapiv2
-
+|	|	+---github.com
+|	|	|		+----activity-tracker
+|	|	|		|		+-----client
+|	|	|		|		|	+------client.go
+|	|	|		|		+-----db
+|	|	|		|		|	+------db.go
+|	|	|		|		+-----pb
+|	|	|		|		|	+------tracker.proto
+|	|	|		|		|	+------tracker.pb.go
+|	|	|		|		+-----server
+|	|	|		|		|	+------server.go
+|	|	|		|		+-----third_party
+|	|	|		|		|	+------google
+|	|	|		|		|	+------protoc-gen-openapiv2
+|       |       |               |               |
 ```
 # Commands :
 
