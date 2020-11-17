@@ -12,24 +12,24 @@
 
 ```
 +--go
-|	+--bin
-|	+--pkg
-|	+--src
-|	|	+---github.com
-|	|	|		+----activity-tracker
-|	|	|		|		+-----client
-|	|	|		|		|	+------client.go
-|	|	|		|		+-----db
-|	|	|		|		|	+------db.go
-|	|	|		|		+-----pb
-|	|	|		|		|	+------tracker.proto
-|	|	|		|		|	+------tracker.pb.go
-|	|	|		|		+-----server
-|	|	|		|		|	+------server.go
-|	|	|		|		+-----third_party
-|	|	|		|		|	+------google
-|	|	|		|		|	+------protoc-gen-openapiv2
-|       |       |               |               |
+|____+--bin
+|____+--pkg
+|____+--src
+	       |______+---github.com
+	                      |________+----activity-tracker
+		                                     |_________+-----client
+		                                     |               |____+------client.go
+		                                     |_________+-----db
+		                                     |               |____+------db.go
+		                                     |_________+-----pb
+		                                     |               |____+------tracker.proto
+		                                     |               |____+------tracker.pb.go
+		                                     |_________+-----server
+		                                     |               |____+------server.go
+		                                     |_________+-----third_party
+		                                                 |____+------google
+		                                                 |____+------protoc-gen-openapiv2
+
 ```
 # Commands :
 
